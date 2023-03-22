@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G6EY1G5V87"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G6EY1G5V87');
+</script>
+    <link rel="stylesheet" href="style/contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="time"></h1>
+        <nav>
+            <ul id="menu">
+                <label for="logo">Djalmad</label>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">saude</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <span id="bars"></span>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Contact</h2>
+        <form id="form" name="form" action="validation.php" method="post">
+          <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="">
+            <span id="errorName"></span>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <span id="emailError"></span>
+
+            <label for="subject">subject:</label>
+            <input type="text" id="subject" name="subject">
+            <span id="errorSubject"></span>
+           
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <span id="errorMessage"></span>
+           
+            <button id="input" type="submit" name="submit" value="Send">Send</button>
+        </form>
+    </section>
+    <script src="js/data.js"></script>
+      <script src="js/valid.js"></script>
+
+</body>
+</html>

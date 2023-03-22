@@ -1,0 +1,301 @@
+/* General styles */
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3 {
+	margin-top: 0;
+}
+h1{
+ text-align: center;
+}
+a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header {
+	position: fixed;
+	background-color: #007bff;
+	color: #fff;
+	padding: 0px;
+	width: 100%;
+	height: 8vh;
+	z-index: 1000;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+	position: relative;
+
+}
+
+nav a {
+	color: #fff;
+}
+
+nav a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+label{
+	position: relative;
+	left: 5%;
+	z-index: 100;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+#menu{
+	position:fixed;
+	display: flex;
+flex-wrap: wrap;
+	margin-top: -24px;
+	background-color: #6c757d;
+	width: 100%;
+}
+#menu li {
+	position: relative;
+	left: 30%;
+	margin-left:40px ;
+	top: 10px;
+}
+main {
+	padding: 20px;
+}
+
+section {
+	/* margin-bottom: 40px; */
+	margin: 0 auto;
+}
+
+
+h2 {
+	position: relative;
+	color: #007bff;
+	margin-bottom: 20px;
+	align-items: center;
+}
+#hero{
+	position: relative;
+	background-image: url(/img/btc.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	margin-top: 88px;
+	width: 100%;
+	height: 30vh;
+	z-index: -1;
+}
+.posts {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.posts article {
+	position: relative;
+	flex-basis: calc(25.33% - 20px);
+	/* margin-right: 20px;
+	margin-bottom: 20px; */
+	left: 50%;
+	transform: translate(-50%, -20%);
+	padding: 20px;
+	margin-top: 170px;
+	background-color: #f8f9fa;
+	min-width: 60%;
+}
+.posts article:hover{
+box-shadow: 5px 5px 5px 5px #6c757d;
+}
+.posts article img{
+	width: 100%;
+}
+
+
+
+.img1{
+	width:100%;
+	height: 40vh;
+	background-image: url(/img/invest.jpg);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+}
+.posts article:last-child {
+	margin-right: 0;
+}
+
+.posts article h3 {
+	margin-top: 0;
+}
+
+.posts article p {
+	margin-bottom: 10px;
+}
+
+.posts article a {
+	display: inline-block;
+	background-color: #007bff;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: background-color 0.2s;
+}
+
+.posts article a:hover {
+	background-color: #0062cc;
+}
+
+#ads{
+	position: absolute;
+	background-color:transparent;
+	width:14%;
+	height: 100vh;
+	top: 450px;
+	right: 3px;
+}
+
+
+
+
+footer {
+	background-color: #6c757d;
+	color: #f8f9fa;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 768px) {
+ header{
+	height: auto;
+	z-index: 1000;
+ }
+ h2{
+	position: relative;
+	margin-top: 100px;
+ }
+	nav {
+		margin-top: 20px;
+	}
+
+	nav ul {
+		display: flex;
+		flex-direction:column ;
+		align-items: center;
+	}
+
+	nav li {
+		display: block;
+		margin-right:0;
+		margin-bottom: 10px;
+		
+	}
+  label{
+	display: none;
+  }
+	#menu{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+height:auto;
+	}
+ #menu li{
+	position:relative;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	left: 0%;
+
+	
+ }
+	#menu a{
+		position: relative;
+		color: black;
+
+
+	}
+	#bars{
+		position: absolute;
+		width: 32px;
+		height: 2px;
+		right: 20px;
+		top: 50px;
+		background-color: black;
+		cursor: pointer;
+	}
+	#bars::before{
+		content: "";
+		position: absolute;
+		width: 32px;
+		height: 2px;
+		top:-5px;
+		cursor: pointer;
+		background-color: black;
+	}
+	#bars::after{
+		content: "";
+		position: absolute;
+		width: 32px;
+		height: 2px;
+		top:5px;
+		cursor: pointer;
+		background-color: black;
+	}
+	main{
+		margin-top: 0px;
+	}
+	#hero{
+		position: relative;
+		margin-top:150px;
+		width: 100%;
+		display: none;
+	}
+	.posts article {
+		position: relative;
+		flex-basis: 100%;
+		margin-right: 0;
+		top: 50px;
+	}
+	.posts article{
+		position: relative;
+		top: 100px;
+	}
+
+}
+
+@media screen and (max-width: 576px) {
+
+	header h1 {
+		font-size: 24px;
+	}
+
+	nav ul {
+		margin-top: 10px;
+	}
+
+	form input,
+	form textarea {
+		font-size: 14px;
+	}
+
+	footer p {
+		font-size: 14px;
+	}
+
+}
+   
