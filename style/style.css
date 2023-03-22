@@ -74,7 +74,7 @@ flex-wrap: wrap;
 }
 #menu li {
 	position: relative;
-	left: 30%;
+	left: 50%;
 	margin-left:40px ;
 	top: 10px;
 }
